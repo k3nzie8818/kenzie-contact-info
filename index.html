@@ -20,7 +20,8 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        header { background-color: #1F1F1F;
+        header {
+            background-color: #1F1F1F;
             padding: 1rem 0;
             display: flex;
             justify-content: space-between;
@@ -29,21 +30,29 @@
         .nav-bar {
             list-style: none;
             display: flex;
-            align-items: center;
+            width: 100%;
             margin: 0;
             padding: 0;
+        }
+        .nav-bar-left {
+            display: flex;
+            align-items: center;
+        }
+        .nav-bar-right {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
         }
         .nav-bar li {
             margin: 0 15px;
         }
-        .nav-bar .home-link {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 1.2rem;
-            color: #F8eee7;
+        .nav-bar .home-link img {
+            height: 40px;
+            width: auto;
         }
         .nav-bar a {
             text-decoration: none;
-            color: #F8eee7;
+            color: #f8eee7;
             font-family: 'Noto Sans', sans-serif;
             font-size: 1rem;
         }
@@ -55,7 +64,7 @@
             color: #EE2A7B;
             font-size: 2.5rem;
             margin-bottom: 1rem;
-          margin-top: 70px;
+            margin-top: 70px;
         }
         .intro {
             display: flex;
@@ -88,7 +97,7 @@
             border: none;
             text-decoration: none;
             font-family: 'Noto Sans', sans-serif;
-          border-radius: 20px;
+            border-radius: 20px;
         }
         .btn:hover {
             background-color: #f8eee7;
@@ -129,14 +138,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class="home-link"><a href="https://k3nzie8818.github.io/kenzie-home/"><img src="mlogoclr.png" alt="Home Logo" style="height: 40px; width: auto;"></a></li>
+        <nav class="nav-bar">
+            <div class="nav-bar-left">
+                <li class="home-link"><a href="https://k3nzie8818.github.io/kenzie-home/"><img src="mlogoclr.png" alt="Home Logo"></a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-wloowvb/">wloowvb</a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-wloorec/">wloorec</a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-more-about-me/">more about me!</a></li>
                 <li><a href="#contact-info">contact info</a></li>
-            </ul>
+            </div>
+            <div class="nav-bar-right">
+                <li><a href="mackenzieleu@gmail.com">email</a></li>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+            </div>
         </nav>
     </header>
     <div class="container">
